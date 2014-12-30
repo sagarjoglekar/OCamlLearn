@@ -5,6 +5,4 @@ let rec factorial r =
     let x = factorial (r-1) in
          r * x ;;
 
-
-
-print_int factorial 5 ;;
+print_int (factorial 5 );;
