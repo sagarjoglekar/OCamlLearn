@@ -1,7 +1,7 @@
 (* To compile this example: ocamlc graphics.cma grtest2.ml -o grtest2 *)
-
+open Graphics;;
 Random.self_init ();;
-Graphics.open_graph " 640x480";;
+open_graph " 640x480";;
 
 let rec iterate r x_init i =
   if i = 1 then x_init
