@@ -1,10 +1,10 @@
 
-let rec factorial num =
-  let fact  = ref 0
-  if num = 0 then fact := 1
+let rec factorial r =
+  if r = 0 then 1
   else
-    fact := factorial num-1
-  print_int !fact;;
+    let x = factorial (r-1) in
+         r * x ;;
 
 
-print_string "Hello, world!\n";;
+
+print_int factorial 5 ;;
